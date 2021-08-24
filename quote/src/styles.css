@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+body{
+  background-image: url('../src/assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: Satisfy;
+
+}
