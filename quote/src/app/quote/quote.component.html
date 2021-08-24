@@ -1,19 +1,18 @@
-<div class="overlay">
+<div class="one">
   <h1>WELCOME TO QUOTY!</h1>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-md-4">
         <app-quote-form (add)="addedQuote($event)"></app-quote-form>
       </div>
-      <div class="col-sm-9">
-        <div class="all-cards">
+      <div class="col-md-8">
+        <div class="cards">
           <div *ngFor="let quote of sortQuotes let i= index" class="card" style="width: 28rem;"  >
             <div class="card-body">
-              <h4 class="card-title" appHighlightQoute >{{quote.title}}<button (click)='displayInfo(i)' class="btn btn-info btn-sm" id="quotes-button" >See More</button></h4>
+              <h4 class="card-title" appHighlightQoute >{{quote.title}}<button (click)='displayInfo(i)' class="btn btn-info" id="quotes" >Details</button></h4>
               <p class="card-text" id="param">{{quote.quote}}</p>
               <app-quote-deets *ngIf='quote.showInfo' bind-quoty='quote' (isRead)='quoteDelete($event,i)'></app-quote-deets>
-              <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date"> on: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
-             
+              <span class="card-subtitle mb-2">Quote by: <span id="name">{{quote.name}}</span><span id="date"> on: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>            
             </div>
           </div>
         </div>
