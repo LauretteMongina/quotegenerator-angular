@@ -5,7 +5,7 @@ Laurette
 
 ## Description
 This is angular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote.
-<img src="../src/assets/quote.png>
+<img src="quote.png">
 
 ## Live Page
 https://laurettemongina.github.io/quotegenerator-angular/
@@ -34,13 +34,15 @@ To get more help on the Angular CLI use ng help or go check out the Angular CLI 
 Open Terminal {Ctrl+Alt+T}
 
 git clone https://laurettemongina.github.io/quotegenerator-angular/
-
-cd quote 
-cd quote
+<ul>
+<li>cd quote</li>
+<li>cd quote</li>
+</ul>
 
 code . or atom . based on the text editor you have.
 
 ## Technologies Used
+
 HTML5
 CSS3
 [AngularCLI]
