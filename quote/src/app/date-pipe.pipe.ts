@@ -8,14 +8,14 @@ export class DatePipePipe implements PipeTransform {
   transform(value: any): number {
     let today:Date = new Date();
     let todayWithNoTime:any = new Date(today.getFullYear(),today.getMonth(),today.getDate())
-    var dateDifference =Math.abs(todayWithNoTime - value)
+    var dateDiff =Math.abs(todayWithNoTime - value)
     const secondsInADay= 86400;
 
-    var dateDifferenceSeconds=dateDifference*0.001; 
-    var dateCounter = dateDifferenceSeconds/secondsInADay;
+    var dateDiffSec=dateDiff*0.001; 
+    var dateCounting = dateDiffSec/secondsInADay;
 
-    if (dateCounter >= 1 && todayWithNoTime > value){
-        return dateCounter;
+    if (dateCounting >= 1 && todayWithNoTime > value){
+        return dateCounting;
     }else{
         return 0;
     }
