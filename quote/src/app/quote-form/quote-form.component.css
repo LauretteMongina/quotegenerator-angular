@@ -1,0 +1,15 @@
+textarea{
+  background: transparent;
+}
+input{
+  background: transparent;
+}
+.form-control{
+  color: white;
+}
+label{
+  color: white;
+}
+h2{
+  color: darkorange;
+}
