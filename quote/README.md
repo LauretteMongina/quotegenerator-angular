@@ -5,7 +5,7 @@ Laurette
 
 ## Description
 This is angular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote.
-<img src="quote.png">
+<img src='quote.png'>
 
 ## Live Page
 https://laurettemongina.github.io/quotegenerator-angular/
@@ -47,11 +47,11 @@ HTML5
 CSS3
 [AngularCLI]
 Bootstrap
-Known Bugs
+## Known Bugs
 Highlight directive property does not work.
 Forms not validated.
 ## Contact Information
-If you have any question or contributions, please email me at [jymal6anthony4@gmail.com]
+If you have any question or contributions, please email me at [monginalaurette@gmail.com]
 
 ## License
 MIT License:
