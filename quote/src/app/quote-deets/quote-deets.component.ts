@@ -7,16 +7,16 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-deets.component.css']
 })
 export class QuoteDeetsComponent implements OnInit {
-  @Input() quoty: Quote;
+  @Input() quotess: Quote;
   @Output() isRead = new EventEmitter<boolean>();
   deleteQuote(read:boolean){
     this.isRead.emit(read);
   }
   upvote(){
-    this.quoty.likes+=1;
+    this.quotess.likes+=1;
   }
   downvote(){
-    this.quoty.dislikes+=1;
+    this.quotess.dislikes+=1;
   }
   constructor() { 
 

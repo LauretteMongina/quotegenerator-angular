@@ -11,7 +11,7 @@
             <div class="card-body">
               <h4 class="card-title" appHighlightQoute >{{quote.title}}<button (click)='displayInfo(i)' class="btn btn-info" id="quotes" >Details</button></h4>
               <p class="card-text" id="param">{{quote.quote}}</p>
-              <app-quote-deets *ngIf='quote.showInfo' bind-quoty='quote' (isRead)='quoteDelete($event,i)'></app-quote-deets>
+              <app-quote-deets *ngIf='quote.showInfo' bind-quotess='quote' (isRead)='quoteDelete($event,i)'></app-quote-deets>
               <span class="card-subtitle mb-2">Quote by: <span id="name">{{quote.name}}</span><span id="date"> on: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>            
             </div>
           </div>
